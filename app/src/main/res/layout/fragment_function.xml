@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_three"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/rounded_corners"
+        android:alpha="0.7"
+        android:padding="5dp"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+        <EditText
+            android:id="@+id/potenciaEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/potencia_w_Cuadro_1"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/tiempoEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/tiempo_h_Cuadro_2"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/panelesEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/numero_de_paneles_Cuadro_3"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/calcularButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.7"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="@color/light_blue"
+            android:text="@string/Boton_calcular_energia" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/resultadoTextSolicitadoView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="16dp"
+        android:textStyle="bold"
+        android:text="@string/Label_calculo_energia_solicitada"
+        android:textSize="16sp" />
+
+    <TableLayout
+        android:id="@+id/resultTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:paddingTop="16dp"
+        android:background="@drawable/table_border"
+        android:gravity="center">
+
+        <TableRow
+            android:background="@drawable/table_row_border">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_columna_1"
+                android:textStyle="bold"
+                android:background="@color/encabezado"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_columna_2"
+                android:textStyle="bold"
+                android:background="@color/encabezado"
+                android:padding="8dp"
+                android:textColor="@android:color/white"
+                android:gravity="center"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_original" />
+
+
+</LinearLayout>

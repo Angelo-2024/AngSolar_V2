@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    android:gravity="center"
+    android:alpha="0.9">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/primary_color"
+        android:alpha="0.4"/>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/header_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <ImageView
+            android:id="@+id/image_energy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/energy" />
+
+        <TextView
+            android:id="@+id/text_Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="arial"
+            android:text="@string/guion"
+            android:textColor="@color/white"
+            android:textSize="1sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/titulo_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="arial"
+            android:text="@string/titulo_login"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/spacing"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/proyecto_solarsports_Inicio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="arial"
+            android:text="@string/proyecto_solarsports_Inicio"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_below="@id/header_section">
+
+        <Button
+            android:id="@+id/button_navigate_to_function"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Boton_calcular_energia"
+            android:background="@drawable/button_functions"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/button_navigate_to_consumer"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Boton_dos"
+            android:background="@drawable/button_functions"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/button_navigate_to_panels"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Boton_tres"
+            android:background="@drawable/button_functions"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/button_navigate_to_bill"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="@string/Boton_cuatro"
+            android:background="@drawable/button_functions"
+            android:textColor="@color/white"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@drawable/category"
+            android:title="@string/menu_category" />
+
+        <item
+            android:id="@+id/screenFragment"
+            android:icon="@drawable/funciones"
+            android:title="@string/menu_funciones" />
+
+        <!-- Funciones apagadas
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/estadistica"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_beneficios"
+            android:icon="@drawable/beneficios"
+            android:title="@string/menu_beneficios" />
+
+        <item
+            android:id="@+id/nav_paneles"
+            android:icon="@drawable/paneles"
+            android:title="@string/menu_paneles" />
+
+        -->
+    </group>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/principalFragment"
+            android:icon="@drawable/seguimiento"
+            android:title="@string/seguimiento" />
+    </group>
+
+
+</menu>

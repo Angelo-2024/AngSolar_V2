@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backdeg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registro_de_consumo"
+                android:textStyle="bold"
+                android:fontFamily="arial"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.7"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/editFechaConsumo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Fecha_Consumo"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="true" />
+
+                <EditText
+                    android:id="@+id/editConsumoEnergia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Consumo"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/editCostoEstimado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Costo_Estimado"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/editTarifaKwh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/Tarifa_por_kwh"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/editNotasAdicionales"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="@string/notas_adicionales_consumo"
+                    android:inputType="textMultiLine" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <Button
+                        android:id="@+id/btnRegistrarConsumo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Boton_registrar"
+                        android:alpha="0.7"
+                        android:background="@drawable/rounded_corners"
+                        android:backgroundTint="@color/light_blue"
+                        android:layout_marginEnd="8dp"/> <!-- Margen derecho para separación -->
+
+                    <TextView
+                        android:id="@+id/textCantidadConsumos"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/registros_cantidades" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/registro_de_facturas"
+                android:textStyle="bold"
+                android:fontFamily="arial"
+                android:textSize="24sp"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.8"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <EditText
+                    android:id="@+id/editFechaFactura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/fecha_de_factura"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="true" />
+
+                <EditText
+                    android:id="@+id/editNumeroFactura"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/numero_de_factura" />
+
+                <EditText
+                    android:id="@+id/editMontoTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/monto_total"
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/editFechaVencimiento"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/fecha_de_vencimiento"
+                    android:inputType="none"
+                    android:focusable="false"
+                    android:clickable="true" />
+
+                <Spinner
+                    android:id="@+id/spinnerMetodoPago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/metodos_pago" />
+
+                <RadioGroup
+                    android:id="@+id/radioEstadoPago"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radioPagado"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pagado_facturas" />
+
+                    <RadioButton
+                        android:id="@+id/radioPendiente"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pendiente_facturas" />
+
+                    <RadioButton
+                        android:id="@+id/radioVencido"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vencido_factura" />
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/editNotasFactura"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="@string/notas_adicionales_facturas"
+                    android:inputType="textMultiLine" />
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <Button
+                        android:id="@+id/btnRegistrarFactura"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/registrar_boton_facturas"
+                        android:alpha="0.7"
+                        android:background="@drawable/rounded_corners"
+                        android:backgroundTint="@color/light_blue"
+                        android:layout_marginEnd="8dp"/> <!-- Margen derecho para separación -->
+
+                    <TextView
+                        android:id="@+id/textCantidadFacturas"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/n_de_facturas" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+        </LinearLayout>
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:alpha="0.8"
+            app:cardElevation="4dp"
+            app:cardCornerRadius="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="@string/Descripcion"
+                    android:src="@drawable/ideas"
+                    android:translationZ="10dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/consejoTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/consejo_aleatorio"
+                        android:textSize="26sp"
+                        android:gravity="center"
+                        android:textColor="@color/dark_green"
+                        android:layout_marginBottom="20dp" />
+
+                    <TextView
+                        android:id="@+id/cantidadRegistrosTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Limpiar"
+                        android:textSize="1sp"
+                        android:layout_marginTop="1dp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

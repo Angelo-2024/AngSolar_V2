@@ -1,0 +1,166 @@
+<resources>
+
+    <string name="app_name">AngSolar</string>
+    <string name="guion">_</string>
+
+    <!-- Menu  -->
+
+
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">AngSolar</string>
+    <string name="nav_header_subtitle">admin@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Configuracion</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Registros</string>
+    <string name="menu_category">Categoria Demo</string>
+    <string name="menu_slideshow">Estadisticas</string>
+    <string name="menu_beneficios">Consejos</string>
+    <string name="menu_funciones">Funciones</string>
+    <string name="menu_paneles">Paneles</string>
+    <string name="servicios">Servicios</string>
+    <string name="calculadora_de_funciones"></string>
+    <string name="seguimiento">Seguimiento</string>
+
+    <!-- Pantalla Login -->
+
+    <string name="password">Contraseña</string>
+    <string name="usuario_login">Usuario</string>
+    <string name="contrasena_login">Contraseña</string>
+    <string name="subtitulos_login">Ingrese sus Credenciales de Acceso</string>
+    <string name="boton_iniciar_sesion_login">Iniciar Sesion</string>
+    <string name="titulo_login">AngSolar</string>
+    <string name="proyecto_solarsports_Inicio">Proyecto SolarSports</string>
+    <string name="recuperar_contrasena">Recuperar Contraseña</string>
+    <string name="nuevo_usuario">Nuevo Usuario</string>
+    <string name="Texto_invitado">Ingrese como Invitado</string>
+
+    <!-- Pantalla Registro -->
+
+    <string name="reg_nuevo_user">Registro Nuevo Usuario</string>
+    <string name="reg_name_user">Nombre</string>
+    <string name="reg_mail_user">Correo</string>
+    <string name="boton_registrar">Registrar</string>
+    <string name="contrasena_repetir">Repetir Contraseña</string>
+    <string name="eres_usuario">Si eres Usuario</string>
+
+
+    <!-- Pantalla categorias -->
+
+    <string name="cantidad_categoria">1</string>
+    <string name="linea_boton_inicio">-------</string>
+    <string name="cantidad_estadistica">2</string>
+    <string name="cantidad_beneficios">20</string>
+    <string name="cantidad_funciones">2</string>
+
+    <!-- Pantalla funciones calculadora -->
+
+    <string name="potencia_w_Cuadro_1">Potencia (W)</string>
+    <string name="tiempo_h_Cuadro_2">Tiempo (h)</string>
+    <string name="numero_de_paneles_Cuadro_3">Número de paneles</string>
+    <string name="Boton_calcular_energia">Calculadora de  Energía</string>
+    <string name="Label_calculo_energia_solicitada">Calculo Energía solicitada :</string>
+    <string name="Label_energia_generada">Energía generada:</string>
+    <string name="label_original">-</string>
+    <string name="titulo_columna_1">TIEMPO</string>
+    <string name="titulo_columna_2">ENERGIA</string>
+
+    <!-- Pantalla funciones  -->
+
+    <string name="Boton_dos">Calculadora de Consumo</string>
+    <string name="Boton_tres">Calculadora Paneles Solares</string>
+    <string name="Boton_cuatro">Calcula tu factura</string>
+    <string name="documento">Cedula de Ciudadania</string>
+
+    <!-- Pantalla Seguimientos -->
+
+    <string name="Pantalla_Principal">Registrar</string>
+    <string name="estad_sticas">Estadísticas</string>
+    <string name="consejos">Consejos</string>
+    <string name="actualizar">Actualizar</string>
+    <string name="Descripcion">idea</string>
+    <string name="consejo_aleatorio">Consejo aleatorio</string>
+    <string name="Limpiar">-</string>
+
+
+    <!-- Pantalla Registro -->
+
+    <string name="registro_de_consumo">Registro de Consumo</string>
+    <string name="Fecha_Consumo">Fecha del Consumo</string>
+    <string name="Consumo">Consumo de Energía (kWh)</string>
+    <string name="Costo_Estimado">Costo Estimado</string>
+    <string name="Tarifa_por_kwh">Tarifa por kWh</string>
+    <string name="notas_adicionales_consumo">Notas Adicionales</string>
+    <string name="Boton_registrar">Registrar</string>
+    <string name="registros_cantidades">Registros:</string>
+    <string name="registro_de_facturas">Registro de Facturas</string>
+    <string name="fecha_de_factura">Fecha de Factura</string>
+    <string name="numero_de_factura">Número de Factura</string>
+    <string name="monto_total">Monto Total</string>
+    <string name="fecha_de_vencimiento">Fecha de Vencimiento</string>
+    <string name="pagado_facturas">Pagado</string>
+    <string name="pendiente_facturas">Pendiente</string>
+    <string name="vencido_factura">Vencido</string>
+    <string name="notas_adicionales_facturas">Notas Adicionales</string>
+    <string name="registrar_boton_facturas">Registrar</string>
+    <string name="n_de_facturas">N° de Facturas:</string>
+    <string name="estad_sticas_de_consumo">Estadísticas de Consumo</string>
+    <string name="Resultado_promedio_uno">Promedio de Consumo: 0.0 kWh</string>
+    <string name="consumo_total_estadistica">Consumo Total: 0.0 kWh</string>
+    <string name="consumo_m_ximo">Consumo Máximo: 0.0 kWh</string>
+    <string name="consumo_minimo">Consumo Mínimo: 0.0 kWh</string>
+
+
+    <!-- Pantalla Estadistica -->
+
+    <string name="titulo_de_factura_estadistica">Estadísticas de Facturas</string>
+    <string name="monto_total_facturado">Monto Total Facturado: 0.0 COP</string>
+    <string name="factura_maximo">Factura Máxima: 0.0 COP</string>
+    <string name="factura_minima">Factura Mínima: 0.0 COP</string>
+    <string name="promedio_de_factura_estadistica">Promedio de Factura: 0.0 COP</string>
+    <string name="mes_de_factura_maxima">Mes de Factura Máxima: -</string>
+    <string name="mes_de_factura_minima">Mes de Factura Mínima: -</string>
+    <string name="idea">idea</string>
+
+    <!-- Pantalla  -->
+
+
+
+    <!-- ARRAY - ITEMS  -->
+
+    <string-array name="aparatos">
+        <item>Otros</item>
+        <item>Aire acondicionado</item>
+        <item>Secadora de Ropa</item>
+        <item>Plancha de Ropa</item>
+        <item>Estufa Electrica</item>
+        <item>Calentador</item>
+        <item>Horno</item>
+        <item>Desktop</item>
+        <item>Nevera</item>
+        <item>Aspiradora</item>
+        <item>Lavadora</item>
+        <item>Lámpara</item>
+        <item>Televisor</item>
+        <item>Portatil</item>
+    </string-array>
+
+    <string-array name="categorias_array">
+            <item></item>
+        </string-array>
+
+    <string-array name="metodos_pago">
+        <item>Efectivo</item>
+        <item>Tarjeta de Crédito</item>
+        <item>Tarjeta de Débito</item>
+        <item>Transferencia Bancaria</item>
+        <item>Cheque</item>
+        <item>Pago Móvil</item>
+    </string-array>
+
+</resources>
+
+

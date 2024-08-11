@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="solar.angsolar.activity.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="solar.angsolar.activity.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="solar.angsolar.activity.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_beneficios"
+        android:name="solar.angsolar.activity.ui.service.ServiceFragment"
+        android:label="@string/servicios"
+        tools:layout="@layout/fragment_service" />
+
+    <fragment
+        android:id="@+id/nav_paneles"
+        android:name="solar.angsolar.activity.ui.paneles.panelesFragment"
+        android:label="@string/menu_paneles"
+        tools:layout="@layout/fragment_paneles" />
+
+    <fragment
+        android:id="@+id/screenFragment"
+        android:name="solar.angsolar.activity.ui.function.ScreenFragment"
+        tools:layout="@layout/fragment_screen"
+        android:label="@string/menu_funciones">
+        <action
+            android:id="@+id/action_screenFragment_to_functionFragment"
+            app:destination="@id/functionFragment" />
+        <action
+            android:id="@+id/action_screenFragment_to_calcFragment"
+            app:destination="@id/calcFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/functionFragment"
+        android:name="solar.angsolar.activity.ui.function.FunctionFragment"
+        tools:layout="@layout/fragment_function"
+        android:label="@string/calculadora_de_funciones" />
+
+    <fragment
+        android:id="@+id/calcFragment"
+        android:name="solar.angsolar.activity.ui.function.CalcFragment"
+        android:label="Consumo de Energia"
+        tools:layout="@layout/fragment_calc" />
+
+    <!-- principal con subfragmentos -->
+    <fragment
+        android:id="@+id/principalFragment"
+        android:name="solar.angsolar.activity.Principal"
+        android:label="Seguimiento"
+        tools:layout="@layout/fragment_principal">
+        <action
+            android:id="@+id/action_principalFragment_to_registroFragment"
+            app:destination="@id/registroFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_estadisticasFragment"
+            app:destination="@id/estadisticasFragment" />
+        <action
+            android:id="@+id/action_principalFragment_to_beneficiosFragment"
+            app:destination="@id/beneficiosFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/registroFragment"
+        android:name="solar.angsolar.activity.ui.seguimiento.RegistroFragment"
+        android:label="Registro"
+        tools:layout="@layout/fragment_registro" />
+
+    <fragment
+        android:id="@+id/estadisticasFragment"
+        android:name="solar.angsolar.activity.ui.seguimiento.EstadisticasFragment"
+        android:label="Estadisticas"
+        tools:layout="@layout/fragment_estadisticas" />
+
+    <fragment
+        android:id="@+id/beneficiosFragment"
+        android:name="solar.angsolar.activity.ui.seguimiento.BeneficiosFragment"
+        android:label="Consejos"
+        tools:layout="@layout/fragment_beneficios" />
+
+
+
+
+
+</navigation>

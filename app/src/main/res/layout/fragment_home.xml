@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_home"
+    tools:context=".activity.ui.home.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/primary_color"
+            android:alpha="0.4"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="25dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/energy"/>
+
+            <TextView
+                android:id="@+id/text_Home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="_"
+                android:textStyle="bold"
+                android:fontFamily="arial"
+                android:textSize="1sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titulo_login"
+                android:textStyle="bold"
+                android:fontFamily="arial"
+                android:textSize="32sp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/proyecto_solarsports_Inicio"
+                android:textStyle="bold"
+                android:fontFamily="arial"
+                android:textSize="22sp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="196dp"
+            android:alpha="0.7"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_corners"
+                android:padding="10dp"
+                android:layout_marginTop="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_margin="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginBottom="10dp">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/rounded_corners"
+                            android:backgroundTint="@color/primary_color"
+                            android:alpha="0.7"
+                            android:padding="5dp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_marginEnd="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/menu_gallery"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="10dp"/>
+                            <TextView
+                                android:id="@+id/registro_contador"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cantidad_categoria"
+                                android:textSize="10sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dp"/>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/category"
+                                android:layout_marginTop="10dp"
+                                app:tint="@color/white" />
+
+                            <Button
+                                android:id="@+id/registro_buttom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/linea_boton_inicio"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/white"
+                                android:background="@drawable/button_functions"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/rounded_corners"
+                            android:backgroundTint="@color/primary_color"
+                            android:alpha="0.7"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/menu_slideshow"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cantidad_estadistica"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dp"/>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/estadistica"
+                                android:layout_marginTop="10dp"
+                                app:tint="@color/white" />
+
+                            <Button
+                                android:id="@+id/estadistica_buttom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/linea_boton_inicio"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/white"
+                                android:background="@drawable/button_functions"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="10dp">
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/rounded_corners"
+                            android:backgroundTint="@color/primary_color"
+                            android:alpha="0.7"
+                            android:padding="5dp"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:layout_marginEnd="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/menu_beneficios"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cantidad_beneficios"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dp"/>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/beneficios"
+                                android:layout_marginTop="10dp"
+                                app:tint="@color/white" />
+
+                            <Button
+                                android:id="@+id/consejo_buttom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="10dp"
+                                android:background="@drawable/button_functions"
+                                android:backgroundTint="@color/white"
+                                android:text="@string/linea_boton_inicio"
+                                android:textColor="@color/white"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="160dp"
+                            android:background="@drawable/rounded_corners"
+                            android:backgroundTint="@color/primary_color"
+                            android:alpha="0.7"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/menu_funciones"
+                                android:textSize="16sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="10dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/cantidad_funciones"
+                                android:textSize="20sp"
+                                android:textColor="@color/white"
+                                android:layout_marginTop="5dp"/>
+
+                            <ImageView
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:src="@drawable/funciones"
+                                android:layout_marginTop="10dp"
+                                app:tint="@color/white" />
+
+                            <Button
+                                android:id="@+id/funcion_buttom"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/linea_boton_inicio"
+                                android:textSize="14sp"
+                                android:textColor="@color/white"
+                                android:backgroundTint="@color/white"
+                                android:background="@drawable/button_functions"
+                                android:layout_marginTop="10dp"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
